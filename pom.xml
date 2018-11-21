@@ -20,6 +20,8 @@
 
     <modules>
         <module>eureka</module>
+        <module>cloud-provide</module>
+        <module>cloud-custom</module>
     </modules>
 
     <properties>
