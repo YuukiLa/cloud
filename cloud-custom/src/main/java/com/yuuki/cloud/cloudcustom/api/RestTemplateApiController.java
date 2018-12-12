@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-@RestController
+/**
+ * 加入feign后 去掉这个controller
+ */
+//@RestController
 public class RestTemplateApiController {
 
 

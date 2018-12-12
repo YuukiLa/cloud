@@ -13,3 +13,17 @@ spring:
 PROVIDE:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+feign:
+  hystrix:
+    enabled: false
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
