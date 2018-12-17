@@ -9,10 +9,8 @@ public class MsgController {
 
 
     @GetMapping("/msg")
-    public String getMsg() throws InterruptedException {
+    public String getMsg() {
 
-        Thread.sleep(1000);
-        System.out.println("end");
         return "this is provide msg";
     }
 

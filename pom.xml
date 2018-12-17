@@ -22,6 +22,7 @@
         <module>eureka</module>
         <module>cloud-provide</module>
         <module>cloud-custom</module>
+        <module>getway</module>
     </modules>
 
     <properties>
