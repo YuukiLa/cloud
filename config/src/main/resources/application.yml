@@ -1,0 +1,18 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.coding.net/yuuki__/config.git
+          username: yuuki__
+          password: x806393858
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/

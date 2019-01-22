@@ -1,5 +1,6 @@
 package com.yuuki.cloud.cloudprovide.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MsgController {
 
+    @Value("${env}")
+    String env;
 
     @GetMapping("/msg")
     public String getMsg() {
@@ -20,5 +23,9 @@ public class MsgController {
     }
 
 
+    @GetMapping("/env")
+    public String getEnv(){
+        return env;
+    }
 
 }
